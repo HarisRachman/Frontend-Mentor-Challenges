@@ -1,0 +1,153 @@
+/* ## Colors
+
+### Primary
+
+- Dark cyan: hsl(158, 36%, 37%)
+- Cream: hsl(30, 38%, 92%)
+
+### Neutral
+
+- Very dark blue: hsl(212, 21%, 14%)
+- Dark grayish blue: hsl(228, 12%, 48%)
+- White: hsl(0, 0%, 100%) */
+
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 14px;
+  background-color: hsl(30, 38%, 92%);
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: calc(100vh - 0.1px);
+  margin: 0 1.5rem;
+}
+
+p {
+  color: hsl(228, 12%, 48%);
+  line-height: 1.8rem;
+  margin-bottom: 2rem;
+}
+
+button,
+li {
+  font-family: inherit;
+}
+
+/* .img-mobile {
+  width: 100%;
+} */
+
+.container {
+  margin-top: 1.5rem;
+  max-width: 600px;
+}
+
+.container ul {
+  list-style-type: none;
+}
+
+.container h2 {
+  text-transform: uppercase;
+  color: hsl(228, 12%, 48%);
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.7rem;
+  letter-spacing: 0.3rem;
+  font-weight: 500;
+  margin: 1rem 0 1rem 0;
+}
+
+.container h1 {
+  font-family: "Fraunces", sans-serif;
+  color: hsl(212, 21%, 14%);
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.container article:first-child img {
+  width: 100%;
+  border-radius: 1rem 1rem 0 0;
+}
+
+.container article:last-child {
+  background-color: hsl(0, 0%, 100%);
+  padding: 1.5rem;
+  border-radius: 0 0 1rem 1rem;
+}
+
+.container ul {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.container .price {
+  font-family: "Fraunces", sans-serif;
+  color: hsl(158, 36%, 37%);
+  font-size: 2rem;
+  margin-right: 1.5rem;
+}
+
+.container ul li:nth-child(2) {
+  color: hsl(228, 12%, 48%);
+}
+
+.container .btn {
+  padding: 1rem;
+  color: white;
+  font-weight: 700;
+  font-size: 1rem;
+  width: 100%;
+  background-color: hsl(158, 36%, 37%);
+  padding: 1rem 2rem;
+  border-radius: 0.625rem;
+  cursor: pointer;
+  transition: 0.3s;
+  border-width: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container .btn:hover {
+  background-color: hsl(158, 31%, 24%);
+}
+
+.container .btn img {
+  margin-right: 0.5rem;
+}
+
+.attribution {
+  margin-top: 1rem;
+  font-size: 14px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 640px) {
+  .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .container article:first-child img {
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem 0rem 0 1rem;
+  }
+
+  .container article:nth-child(2) {
+      border-radius: 0 1rem 1rem 0;
+  }
+}
