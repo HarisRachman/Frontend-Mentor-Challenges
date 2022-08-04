@@ -179,7 +179,7 @@ hr {
   color: hsl(228, 45%, 44%);
 }
 
-@media (min-height: 640px) {
+@media (min-width: 640px) {
   .container {
     max-width: 300px;
   }
