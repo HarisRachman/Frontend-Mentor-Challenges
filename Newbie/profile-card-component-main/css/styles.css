@@ -1,0 +1,154 @@
+/* ## Colors
+
+### Primary
+
+Dark cyan: hsl(185, 75%, 39%)
+Very dark desaturated blue: hsl(229, 23%, 23%)
+Dark grayish blue: hsl(227, 10%, 46%)
+
+### Neutral
+
+Dark gray: hsl(0, 0%, 59%) */
+
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 18px;
+  font-family: "Kumbh Sans", sans-serif;
+  background-color: hsl(185, 75%, 39%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: calc(100vh - 0.1px);
+  margin: 0 1.5rem;
+}
+
+ul {
+  list-style-type: none;
+  position: relative;
+  margin: 0 1rem;
+}
+
+hr {
+  margin: 1rem 0 0 0;
+  border-bottom: none;
+  border-top: 1px solid hsl(227, 10%, 46%);
+  opacity: 0.25;
+}
+
+.container {
+  max-width: 600px;
+}
+
+.container article:first-child img {
+  width: 100%;
+  border-radius: 1rem 1rem 0 0;
+}
+
+.container article:nth-child(2) {
+  background-color: #fff;
+  margin-top: -0.5rem;
+  border-radius: 0 0 1rem 1rem;
+}
+
+.image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -4rem;
+}
+
+.container article:nth-child(2) img {
+  width: 35%;
+  border-radius: 100%;
+  border: solid 5px #fff;
+}
+
+.middle-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container article:nth-child(2) h1 {
+  margin-top: 1.5rem;
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: hsl(229, 23%, 23%);
+}
+
+.container article:nth-child(2) span {
+  font-weight: 400;
+  margin-left: 0.5rem;
+  color: hsl(227, 10%, 46%);
+}
+
+.container article:nth-child(2) .middle-content p {
+  font-size: 1rem;
+  margin: 0.8rem 0;
+  color: hsl(227, 10%, 46%);
+}
+
+.footer-content {
+    text-align: center;
+    padding: 1.5rem;
+    height: 6rem;
+}
+
+.footer-content h2 {
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: hsl(229, 23%, 23%);
+}
+
+.footer-content p {
+    margin-top: 0.25rem;
+  font-weight: 400;
+  letter-spacing: 0.1rem;
+  font-size: 0.7rem;
+  color: hsl(227, 10%, 46%);
+}
+
+.stat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    left: 0;
+}
+
+.stat-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+.stat-3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    right: 0;
+}
+
+.attribution {
+  margin-top: 1rem;
+  font-size: 16px;
+  color: #fff;
+  text-align: center;
+}
+.attribution a {
+  color: #fff;
+  /* color: hsl(228, 45%, 44%); */
+}
